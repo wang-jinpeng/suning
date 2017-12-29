@@ -286,16 +286,20 @@
 	height: 100%;
 }
 .banner{
-	width: 100%;
+	width:100%;
 	height: 440px;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	justify-content: center;
 }
 .banner-left-photo{
 	float: left;
 	width: 80px;
 	height: 440px;
-	float: left;
 }
 .banner-left-photo img{
+	height:440px;
     margin-left: -275px;
 }
 .banner-list{
@@ -303,6 +307,7 @@
 	height: 440px;
 	float: left;
 	background: #252221;
+	z-index: 5;
 }
 .banner-list ul{
 	margin-top: 1px;
@@ -355,24 +360,30 @@
 	float: left;
 	position: relative;
 }
-.banner-photo ul{
+.banner-photo .photo{
 	width: 830px;
 	height: 440px;
 
 }
-.banner-photo ul li{
+.banner-photo .photo li{
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
+	opacity: 0;
+	transition: all 0.5s;
 }
-.banner-photo ul li .beijingtu{
+.banner-photo .photo li.one{
+	z-index: 1;
+	opacity: 1;
+}
+.banner-photo .photoa li .beijingtu{
 	display: block;
 	width: 100%;
     height: 100%;
 }
-.banner-photo ul li .beijingtu img{
+.banner-photo .photo li .beijingtu img{
 	width: 100%;
     height: 100%;
 }
@@ -437,23 +448,24 @@
     height: 20px;
     text-align: center;
     font-size: 0;
+	z-index: 99;
 }
 .banner-photo .banner-dian .banner-diandian{
-	position: relative;
     display: inline-block;
     opacity: .8;
     padding: 0 8px 0 0;
     height: 20px;
 }
-.banner-photo .banner-dian .banner-diandian a{
+.banner-photo .banner-dian .banner-diandian li{
     width: 16px;
 	height: 16px;
     background: #e9c1f2;
-	float: left;
 	margin-right: 12px;
 	border-radius: 50%;
+	float: left;
+	cursor: pointer;
 }
-.banner-photo .banner-dian .banner-diandian a:first-child{
+.banner-photo .banner-dian .banner-diandian li.one{
 	background: #f0882f;
 }
 .bannerleft{
@@ -473,6 +485,8 @@
 	background: rgba(0, 0, 0, 0);
 	color: #fff;
 	opacity: 0;
+	z-index: 99;
+	cursor: pointer;
 }
 .bannerright{
 	display: block;
@@ -491,6 +505,8 @@
 	background: rgba(0, 0, 0, 0);
 	color: #fff;
 	opacity: 0;
+	z-index: 99;
+	cursor: pointer;
 }
 .banner-photo:hover .bannerleft{
     background: rgba(0, 0, 0, 0.3);
@@ -514,6 +530,7 @@
 	margin-top: 5px;
 	background: #fff;
 	float: left;
+	z-index: 5;
 }
 .banner-hello .user-info{
 	width: 170px;
@@ -688,10 +705,9 @@
     float: left;
 	width: 79px;
 	height: 440px;
-	float: left;
 }
 .banner-right-photo img{
-    width: 79px;
+	margin-left: -170px;
 	height: 440px;
 }
 .bannerdazhe{
