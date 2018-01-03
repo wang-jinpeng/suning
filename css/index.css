@@ -233,7 +233,7 @@
     margin-left: 9px;
     line-height: 38px;
     color: #FFF;
-    font-size: 10px;
+    font-size: 13px;
 }
 .quanbushangpin-fenlei span{
 	line-height: 38px;
@@ -410,7 +410,7 @@
     width: 112px;
     height: 22px;
     overflow: hidden;
-    font: 14px/22px ;
+    font-size: 14px;
     color: #333;
 }
 .banner-photo ul li .little .img-desc{
@@ -1457,7 +1457,7 @@
 	background: -webkit-linear-gradient(left,#1c9daf,#40cda7)
 }
 .shipinpindao .left ul li:nth-child(4){
-	background: -webkit-linear-gradient(left,#d13837,##df6d4f)
+	background: -webkit-linear-gradient(left,#d13837,#df6d4f)
 }
 .shipinpindao .left ul li:nth-child(5){
 	background: -webkit-linear-gradient(left,#ca4283,#eb75cf)
@@ -2712,7 +2712,7 @@ footer .footer-bottom a img{
     right: auto;
     margin-left: -670px;
     margin-top: -159.5px;
-    display: block;
+    display: none;
 }
 .leftdh .kuang{
 	position: relative;
@@ -2740,32 +2740,76 @@ footer .footer-bottom a img{
     text-align: center;
     line-height: 28px;
     cursor: pointer;
-}
-.leftdh .kuang ul li:first-child{
-	    position: relative;
-    width: 70px;
-    left: -1px;
-    background: #F90;
-}
-.leftdh .kuang ul li a{
 	text-decoration: none;
-    color: #333;
-    font-size: 12px; 
+	color: #333;
+	font-size: 12px;
 }
 .leftdh .kuang ul li:hover{
 	background: #f90;
 	color: #fff;
 }
-.leftdh .kuang ul li:hover a{
-	background: #f90;
+.leftdh .kuang ul li.active{
 	color: #fff;
-}
-.leftdh .kuang ul li .first{
-	color: #fff;
+	background: #F90;
 }
 .leftdh .kuang .zhiding{
+	cursor: pointer;
 	display: block;
     width: 68px;
     height: 18px;
     background: url("../img/index.png") -230px -183px;
+}
+header{
+	position: fixed;
+	height: 50px;
+	width: 100%;
+	background: #fff;
+	box-shadow: rgba(0,0,0,.2) 0 1px 5px;
+	left: 0;
+	top: 0;
+	opacity: .95;
+	display: none;
+}
+header .neikuan{
+	width:1190px;
+	margin: 0 auto;
+	height:100%;
+}
+header .dbss{
+	margin-top: 6px;
+}
+header input.sousuo{
+	width: 120px;
+	height: 40px;
+	border: 0;
+	float: left;
+	font-size: 18px;
+	background: #f90;
+	color: #fff;
+	font-weight: bold;
+	margin-top: 5px;
+	cursor: pointer;
+}
+header .header-sousuo{
+	margin-top: 5px;
+	margin-left: 170px;
+
+}
+header .header-right-box{
+	width: auto;
+	height: 36px;
+	margin-left: 20px;
+	float: right;
+	margin-top: 7px;
+	cursor: pointer;
+}
+header .header-right-box span{
+	font-size: 12px;
+	color: #ff6700;
+	line-height: 36px;
+	display: block;
+	float: left;
+}
+header .hei span{
+	color: #666;
 }
