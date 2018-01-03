@@ -86,14 +86,12 @@
         }
         floors.forEach(function (ele,index) {
             if(st<floors[0].offsetTop){
-                btns[0].classList.add("active");
                 for(let i=0;i<btns.length;i++){
                     btns[i].classList.remove("active")
                 }
                 btns[0].classList.add("active")
             }
             if(st>=ele.offsetTop){
-                    btns[0].classList.add("active");
                 for(let i=0;i<btns.length;i++){
                     btns[i].classList.remove("active")
                 }
