@@ -64,6 +64,29 @@
     })
 }
 
+//banner选项卡
+{
+    let btn = document.querySelectorAll('.banner-list ul li');
+    let box = document.querySelectorAll('.index-sort-detail');
+    let big = document.querySelector('.banner');
+    btn.forEach(function (ele, index) {
+        ele.onmouseover = function () {
+            for (let i = 0; i < box.length; i++) {
+                box[i].style.display='none';
+            }
+            // this.classList.add('active');
+            box[index].style.display='block';
+            n = index
+        }
+    });
+    big.onmouseleave = function () {
+        for (let i = 0; i < box.length; i++) {
+            box[i].style.display='none';
+        }
+    }
+
+}
+
 //侧导航、顶部搜索
 {
     let daohang=document.querySelector(".leftdh");
